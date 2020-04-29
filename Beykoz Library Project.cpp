@@ -1,14 +1,15 @@
-/*This project is an C++ program that can manage a library. It can keep book datas, and make their followings.
-
-This program can use with just DEV-CPP v5.11. Other IDE's may not work.
-
-If you want to create your own book data, just copy the code and execute in a new folder. Then you can add new books
-in the program's menu. (Just use the program as usual.)
-
-Created by ; Mert Altuntas, Kaan Celiktas, Mahmutcan Aslan.*/
 
 
+//This program can use with just DEV-CPP v5.11. Other IDE's may not work.
 
+//If you want to create your own book data, just copy the code and execute in a new folder. Then you can add new books
+//in the program's menu. (Just use the program as usual.)
+
+//Created by ; Mert Altuntas, Kaan Celiktas, Mahmutcan Aslan.*/
+
+
+
+#include <ctime>
 #include<iostream>
 #include<stdio.h>
 #include<stdlib.h>
@@ -348,8 +349,8 @@ void Lib::show(int i)
   {
       int i;
       cout<<"\n\t\t>>Please Choose one Branch :-\n";
-      cout<<"\n\t\t1.LITERATURE\n\n\t\t2.HISTORY - SEARCH\n\n\t\t3.ART & DESIGN\n\n\t\t4.PSYCHOLOGY - PHILOSOPY\n\n\t\t5.MECHANICAL - SCIENCE\n\n\t\t6.COMIC BOOKS\n\n\t\t7.Go to menu\n";
-      cout<<"\n\t\tEnter youur choice : ";
+      cout<<"\n\t\t1.LITERATURE\n\n\t\t2.HISTORY - SEARCH\n\n\t\t3.ART & DESIGN\n\n\t\t4.PSYCHOLOGY - PHILOSOPY\n\n\t\t5.POEM\n\n\t\t6.COMIC BOOKS\n\n\t\t7.Go to menu\n";
+      cout<<"\n\t\tEnter your choice : ";
       cin>>i;
       switch(i)
       {
@@ -698,13 +699,31 @@ void Lib::der(char st[],int b,int x)
     intf.close();
 }
 void Lib::get()
+
 {
+ 
    int i;
+   
+   
+   
+
+
+	    cout << "\n\t----------------------------------------------------------\n";
+        cout << "\n\t!      OBJECT ORIENTED PROGRAMMING LESSON PROJECT 1      !\n";
+	    cout << "\n\t----------------------------------------------------------\n";
+        cout << "\n\t\t*****************************************"<<endl ;
+        cout << "\n\t\t* WELCOME TO OUR PROJECT 1 PRESENTATION *"<<endl ;
+        cout << "\n\t\t*****************************************"<<endl ;
+    
+    	std::time_t start = time(0);
+	while( difftime(std::time(0), start) <=3 ) ; 
+
         cout<<"\n\t*************** LIBRARY MANAGEMENT SYSTEM ****************\n"<<"\n\t\t\t Mert - Kaan - Mahmutcan\n\n";
         cout<<"\n\t\t>>Please Choose Any Option To Login \n";
         cout<<"\n\t\t1.Student\n\n\t\t2.Librarian\n\n\t\t3.Close Application\n";
         cout<<"\n\t\tEnter your choice : ";
         cin>>i;
+    
         if(i==1)
         {
             system("cls");
