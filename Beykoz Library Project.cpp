@@ -5,7 +5,7 @@
 
 //Created by ; Mert Altuntas, Kaan Celiktas, Mahmutcan Aslan.
 
-//(Buradaki kodlar code beautify ile tekrar düzenlenmiştir. Orjinali dosyadadır.)
+//(Buradaki kodlar code beautify ile tekrar duzenlenmistir. Orjinali dosyadadir.)
 
 #include <ctime>
 
