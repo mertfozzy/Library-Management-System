@@ -7,7 +7,6 @@
 
 //Librarian login password : "sifre"
 
-//(Buradaki kodlar code beautify ile tekrar duzenlenmistir. Orjinali dosyadadir.)
 
 #include <ctime>
 
@@ -52,6 +51,8 @@ class Lib {
   void der(char[], int, int);
   void fine(int, int, int, int, int, int);
 };
+
+//getting info about book
 void Lib::getdata() {
   int i;
   fflush(stdin);
@@ -83,6 +84,8 @@ void Lib::show(int i) {
     cout << "\n\t\tBook's Quantity : " << q << endl;
   }
 }
+
+//creating booklist.txt in file system
 void Lib::booklist(int i) {
   int b, r = 0;
   system("cls");
@@ -115,6 +118,8 @@ void Lib::booklist(int i) {
   else
     librarian();
 }
+
+//modify book mode
 void Lib::modify() {
   char ch, st1[100];
   int i = 0, b, cont = 0;
@@ -300,6 +305,8 @@ void Lib::modify() {
   librarian();
 
 }
+
+//book categories (or branch)
 int Lib::branch(int x) {
   int i;
   cout << "\n\t\t>>Please Choose one Branch :-\n";
@@ -355,6 +362,7 @@ void Lib::see(int x) {
       librarian();
   }
 
+//searching a book mode (according to it's name or id) 
   system("cls");
   cout << "\n\t\tPlease Choose one option :-\n";
   cout << "\n\t\t1.Search By Name\n\n\t\t2.Search By Book's ID\n";
@@ -411,6 +419,8 @@ void Lib::see(int x) {
     librarian();
 
 }
+
+//issue book mode
 void Lib::issue() {
   char st[50], st1[20];
   int b, i, j, d, m, y, dd, mm, yy, cont = 0;
@@ -561,6 +571,8 @@ void Lib::issue() {
   system("cls");
   librarian();
 }
+
+//issued book tracking
 void Lib::fine(int d, int m, int y, int dd, int mm, int yy) {
   long int n1, n2;
   int years, l, i;
@@ -633,6 +645,8 @@ void Lib::get()
 
 {
 
+
+//welcome page drawing
   int i;
 
   cout << "\n\t----------------------------------------------------------\n"; //WELCOME SCREEN 
@@ -666,7 +680,9 @@ void Lib::get()
     get();
   }
 }
-void Lib::student() {
+
+
+void Lib::student() { //student login
   int i;
   cout << "\n\t************ WELCOME STUDENT ************\n";
   cout << "\n\t\t>>Please Choose One Option:\n";
@@ -689,7 +705,9 @@ void Lib::student() {
     student();
   }
 }
-void Lib::pass() {
+
+
+void Lib::pass() { // login password 
   int i = 0;
   char ch, st[21], ch1[21] = {
     "pass"
@@ -723,7 +741,9 @@ void Lib::pass() {
     get();
   }
 }
-void Lib::librarian() {
+
+
+void Lib::librarian() { //librarian login
   int i;
   cout << "\n\t************ WELCOME LIBRARIAN ************\n";
   cout << "\n\t\t>>Please Choose One Option:\n";
@@ -759,7 +779,9 @@ void Lib::librarian() {
     librarian();
   }
 }
-void Lib::password() {
+
+
+void Lib::password() { //password settings
   int i = 0, j = 0;
   char ch, st[21], ch1[21] = {
     "pass"
