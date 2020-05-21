@@ -5,6 +5,8 @@
 
 //Created by ; Mert Altuntas, Kaan Celiktas, Mahmutcan Aslan.
 
+//Librarian login password : "sifre"
+
 //(Buradaki kodlar code beautify ile tekrar duzenlenmistir. Orjinali dosyadadir.)
 
 #include <ctime>
