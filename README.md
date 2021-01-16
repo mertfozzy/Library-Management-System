@@ -11,7 +11,7 @@ We recommend to use this program with DEV-CPP v5.11. Other IDE's may not work.
 If you want to create your own book data, just copy the code and execute in a new folder. Then you can add new books
 in the program's menu. (Just use the program as usual.)
 
-Created by ; Mert Altuntaş, Kaan Çeliktaş, Mahmutcan Aslan.
+Created by ; Mert Altuntaş
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -21,4 +21,4 @@ Bu programı DEV-CPP v5.11 ile çalıştırmanızı öneririz. Başka geliştirm
 
 Eğer kendi kitap arşivinizi yaratmak isterseniz, sadece ana kodları kopyalaıp boş bir klasörün içinde derleyin-çalıştırın. Akabinde kendi kitap bilgilerinizi programın içerisinden girebilirisiniz. (Yani normal programı kullanın.)
 
-Yazarlar ; Mert Altuntaş, Kaan Çeliktaş, Mahmutcan Aslan.
+Yazarlar ; Mert Altuntaş
